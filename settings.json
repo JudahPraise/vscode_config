@@ -1,0 +1,121 @@
+{
+  "editor.fontSize": 17,
+  "editor.fontWeight": 350,
+  "editor.tabSize": 2,
+  "editor.lineHeight": 1.4,
+  "editor.cursorBlinking": "expand",
+  "editor.glyphMargin": false,
+  "editor.tabCompletion": "on",
+  "editor.semanticHighlighting.enabled": true,
+  "editor.wordWrap": "on",
+  "editor.insertSpaces": false,
+  "editor.detectIndentation": true,
+  "editor.formatOnSave": true,
+  "editor.snippetSuggestions": "top",
+  "editor.formatOnPaste": true,
+  "editor.fontFamily": "'Cascadia Code'",
+  "editor.fontLigatures": "'calt', 'ss01'",  
+  "editor.inlineSuggest.enabled": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "terminal.integrated.fontFamily": "Hack Nerd Font Propo",
+  "prettier.endOfLine": "auto",
+  "security.allowedUNCHosts": [
+    "wsl.localhost"
+  ],
+  "html.format.indentInnerHtml": true,
+  "html.format.indentHandlebars": true,
+  "workbench.tree.indent": 12,
+  "workbench.startupEditor": "none",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true
+  },
+    "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true
+  },
+  "[blade]": {
+    "editor.defaultFormatter": "shufo.vscode-blade-formatter",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true
+  },
+  "[python]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true
+  },
+  "git.openRepositoryInParentFolders": "never",
+  "terminal.integrated.env.windows": {},
+  "editor.minimap.autohide": true,
+  "editor.minimap.renderCharacters": false,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          "comment",
+          "entity.name.type.class", // class names
+          "keyword", // import, export, return…
+          "constant", // String, Number, Boolean…, this, super
+          "storage.modifier", // static keyword
+          "storage.type.class.js", // class keyword
+          "keyword.other",
+          "keyword.control"
+        ],
+        "settings": {
+          "fontStyle": "italic",
+        }
+      }
+    ]
+  },
+  "workbench.colorTheme": "Monokai Pro (Filter Spectrum)"
+
+}

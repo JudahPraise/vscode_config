@@ -1,0 +1,88 @@
+{
+    // Javascript and JQuery
+    "Print to console" : {
+		"scope": "javascript, Jquery",
+		"prefix": "clog",
+		"body": ["console.log($1)"],
+		"description": "Log message to console"
+	},
+
+    "Document Ready": {
+        "scope": "javascript, Jquery",
+        "prefix": "docrdy",
+        "body": ["$(document).ready(function() {\n	$1\n});"],
+        "description": "Wrap code in $(document).ready()"
+    },
+
+    "On Click": {
+        "scope": "javascript, Jquery",
+        "prefix": "onclc",
+        "body": ["$($1).on('click', function(e) {\n	e.preventDefault();	\n	\n});"],
+        "description": "Wrap code in $(document).ready()"
+    },
+
+    "On Submit": {
+        "scope": "javascript, Jquery",
+        "prefix": "onsb",
+        "body": [
+            "$($1).on('submit', function(e) {\n	e.preventDefault();	\n	\n});"
+        ],
+        "description": "Wrap code in $(document).ready()"
+    },
+
+    "JQuery For Each": {
+        "scope": "javascript, Jquery",
+        "prefix": "jqeach",
+        "body": [
+            "JQuery.each(collection, function(index, item) {\n $1 \n	\n});"
+        ],
+        "description": "Wrap code in $(document).ready()"
+    }
+
+    // PHP
+    	"Public Function" : {
+		"scope": "php",
+		"prefix": "pubf",
+		"body": ["public function $1(){\n	//Code here ...	\n}"],
+	},
+
+	"Public Function with Request" : {
+		"scope": "php",
+		"prefix": "pubrf",
+		"body": ["public function $1(Request \\$request){\n	//Code here ...	\n}"],
+	},
+	
+	"Construct" : {
+		"scope": "php",
+		"prefix": "_cnstrc",
+		"body": ["public function __construct(){\n	//Code here ...	\n}"],
+	},
+
+	"DB Transaction" : {
+		"scope": "php",
+		"prefix": "dbtransac",
+		"body": [
+			"try {",
+			"	DB::beginTransaction();\n",
+			"		//Code here ...\n",
+			"   DB::commit();\n",
+			"	return response()->json([",
+			"		'status' => 200,",
+			"		'message' => 'success,'",
+			"	]);",
+			"}catch(Exception \\$e){",
+			"	DB::rollBack();\n",
+			"	return response()->json([",
+            "		'status' => 400,",
+            "		'message' => \\$e->getMessage(),",
+            "	]);",
+            "}"
+		],
+	},
+
+	"Return response json": {
+		"scope": "php",
+		"prefix": "resj",
+		"body": ["return response()->json($1);"]
+	}
+}
